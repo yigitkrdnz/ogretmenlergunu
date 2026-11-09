@@ -706,4 +706,60 @@ button:disabled {
         animation-duration: .01ms !important;
     }
 
+/* =========================================
+   15. MEKTUP MOBİL DÜZENLEME
+========================================= */
+
+.envelope {
+    overflow: visible;
+}
+
+.letter-paper {
+    height: auto;
+    min-height: 470px;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding: 32px 25px;
+}
+
+.paper-content {
+    min-height: 100%;
+    justify-content: flex-start;
+    padding: 12px 0;
+}
+
+.letter-greeting {
+    margin-bottom: 12px;
+}
+
+.letter-paper h2 {
+    margin-bottom: 13px;
+}
+
+.letter-paper p {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.letter-signature {
+    margin-top: 12px;
+}
+
+@media (max-width: 400px) {
+    .letter-paper {
+        min-height: 470px;
+        max-height: 75vh;
+        padding: 28px 19px;
+    }
+
+    .paper-content {
+        padding: 10px 0;
+    }
+
+    .letter-paper p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
 }
